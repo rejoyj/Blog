@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .article-content p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Article</h1>
+    </header>
+
+    <div class="container">
+        <div id="article-content" class="article-content">
+            <img src="./bcac1.jpg" alt="Blockchain Image">
+            <h2>Introduction to Blockchain Technology</h2>
+            <p>Blockchain technology is like a digital ledger where transactions or data are recorded in a secure and transparent manner. Imagine it as a chain of blocks where each block contains information, and once added, it becomes a permanent part of the chain.</p>
+            <h3>Example:</h3>
+            <p>Think about a society without banks or land registries. People rely on paper records and middlemen to verify transactions and ownership. This system is prone to errors, fraud, and lost documents.</p>
+            <p>Now, imagine a digital record book called a blockchain. It's like a giant Google Sheet accessible to everyone, but with special features:</p>
+            <ul>
+                <li> <b>Decentralized:</b> 
+                    <p>There's no single owner or manager. Copies of the record book are stored on multiple computers around the world.</p>
+                </li>
+                <li> <b>Transparent:</b> 
+                    <p>Everyone can see the information in the record book, but they can't change it.</p>
+                </li>
+                <li> <b>Secure:</b> 
+                    <p>Every entry is linked together like a chain, with a unique code for each entry. If someone tries to tamper with the record, everyone will know immediately.</p>
+                </li>
+            </ul>
+            <h2>History and Evolution of Blockchain</h2>
+            <p>Blockchain was first introduced in 2008 by an anonymous person or group called Satoshi Nakamoto, as the technology behind Bitcoin. Since then, it has evolved rapidly, finding applications beyond cryptocurrencies.</p>
+            <h3>Key Concepts</h3>
+            <ol>
+                <li>
+                    <b>Decentralization:</b>
+                    <p>Instead of a single central authority controlling the data, blockchain distributes it across a network of computers, making it more secure and transparent.</p>
+                </li>
+                <li>
+                    <b>Consensus Mechanisms:</b>
+                    <p>These are rules that ensure all participants in the network agree on the validity of transactions. For example, Proof of Work (used by Bitcoin) and Proof of Stake (used by Ethereum).</p>
+                </li>
+                <li>
+                    <b>Cryptographic Hashing:</b>
+                    <p> It's a process where data is converted into a fixed-size string of characters, ensuring the integrity of information stored in blocks.</p>
+                </li>
+            </ol>
+
+            <h2>Use Cases and Applications of Blockchain</h2>
+            <ol>
+                <li>
+                    <b>Cryptocurrencies and Digital Assets:</b>
+                    <p>Bitcoin, Ethereum, and other cryptocurrencies are examples of digital assets built on blockchain technology.</p>
+                </li>
+                <li>
+                    <b>Smart Contracts and Decentralized Applications (DApps):</b>
+                    <p>These are self-executing contracts with the terms of the agreement directly written into code. DApps are applications that run on a blockchain network, such as decentralized finance (DeFi) apps.</p>
+                </li>
+                <li>
+                    <b>Supply Chain Management:</b>
+                    <p>Blockchain can track the journey of products from manufacturer to consumer, ensuring transparency and authenticity. For example, Walmart and IBM are using blockchain to trace the origin of food products.</p>
+                </li>
+                <li>
+                    <b>Healthcare:</b>
+                    <p>Blockchain can securely store and share patient records, ensuring data integrity and privacy.</p>
+                </li>
+                <li>
+                    <b>Finance:</b>
+                    <p>Blockchain can streamline processes like cross-border payments, clearing, and settlement, reducing costs and transaction times.</p>
+                </li>
+            </ol>
+            <p>In essence, blockchain technology holds immense potential to revolutionize various industries by providing transparency, security, and efficiency in transactions and data management.</p>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+
+
+        function displayArticle(article) {
+            var articleContent = document.getElementById("article-content");
+            articleContent.innerHTML = `
+                <h2>${article.title}</h2>
+                <p>${article.content}</p>
+                <p class="author">Author: ${article.author}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
